@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+  font-family: 'Ubuntu', sans-serif;
+  width: 100%;
+  height: 100%; 
+}
+.home{
+    width: 100vw;
+    background-image: url(../static/img/background1.webp);
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    bottom: 0;
+    padding: 0 10px;
+    background: #042146;
+    overflow-y: auto;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9999;
+
+}
+
+#header .profile img{
+    width: 120px;
+    display: block;
+    margin: 15px auto;
+    padding:  0 auto;
+    border: 5px solid #2c2f3f;
+    border-radius: 50%;
+
+}
+
+
+#header .profile .icons img{
+    display: inline-block;
+    justify-content: center;
+    width: 40px;
+    margin:  5px;
+    border: 5px solid #2c2f3f;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
+#header .profile h1{
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+#header .menu{
+    margin-top: 30px;
+    margin-right: 30px;
+    list-style:none;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+#header .menu li{
+    margin-top: 50px;
+}
+
+#header .menu li:hover{
+   color: #2c2f3f;
+} 
