@@ -8,4 +8,5 @@
 - [x]  Instalar pacote pip flask no python;
 - [x]  Importar estilos do Bootstrap;
 - [x]  Criar uma aside com incons e estilizar foto de perfil;
+- [ ]  Estilizar icons;
 
