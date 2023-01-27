@@ -17,12 +17,12 @@
         <title>Daniel-Dev</title>
     </head>
     <body>
-        <section id="home">
+        
             <aside id="header">
                 <section class="profile">
-                    <img src="../static/img/perfil.jpg" alt="foto-de-perfil">
+                    <img id="perfil" src="../static/img/perfil.jpg" alt="foto-de-perfil">
                     <h1>Daniel Albuquerque</h1>
-                    <div class="icons">
+                    <div class="social-links mt-2">
                         <a href="https://www.linkedin.com/in/daniel--albuquerque/"      
                         target="_blank">
                         <img src="../static/img/linkedin.svg" alt="">
@@ -37,21 +37,35 @@
                             <img src="../static/img/envelope.svg" alt="">
                         </a>
                         <a href="http://wa.me/5512988409976?text=Olá Daniel! Tudo bem?" 
-                        target="_blank">
+                         target="_blank">
                             <img src="../static/img/whatsapp.svg" alt="whatsapp">
                         </a>
                     </div>
                 </section>
-                
-                
-                <ul class="menu">
-                    <li><a href=""></a>Home</li>
-                    <li><a href=""></a>Sobre</li>
-                    <li><a href=""></a>Projetos</li>
-                    <li><a href=""></a>Contatos</li>
-                </ul>
+                <nav id="nav" class="nav-menu">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link active" aria-current="page" href="#"><img 
+                            src="../static/img/house-fill.svg" alt="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img src="../static/img/person.svg" alt="">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                         <a class="nav-link" href="#"><img src="../static/img/list-check.svg" alt="">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#"><img src="../static/img/gear.svg" alt="">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                         <a class="nav-link" href="#"><img src="../static/img/envelope-at.svg" 
+                             alt="">Contato</a>
+                        </li>
+                      </ul>
+                </nav>   
             </aside>
-        </section>
+
+
         <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../static/script.js"></script>   
     </body>
