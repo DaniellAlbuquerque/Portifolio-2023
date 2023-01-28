@@ -15,4 +15,10 @@
 - [x]  Estilizar icons;
 - [x]  Criar uma nova sessão;
 
+***Parte 3***
+***28/01/2023***
+
+- [x] Criar uma main;
+- [x] Estilzar a main usando keyframes;
+
 
