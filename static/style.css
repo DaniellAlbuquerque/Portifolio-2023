@@ -18,7 +18,7 @@ html,body{
     font-size: 20px;
     bottom: 0;
     padding: 0 10px;
-    background: #e08713;
+    background: #4a4744;
     overflow-y: auto;
     width: 300px;
     transition: all ease-in-out 0.5s;
@@ -30,7 +30,7 @@ html,body{
     width: 135px;
     display: block;
     margin: 15px auto;
-    border: 5px solid rgb(17, 17, 17);
+    border: 3px solid rgb(141, 141, 141);
     border-radius: 50%;
 
 }
@@ -39,26 +39,26 @@ html,body{
     font-size: 24px;
     margin: 0;
     padding: 0;
-    font-weight: 600;
+    font-weight: 400;
     text-align: center;
-    color: rgb(17, 17, 17);
+    color: rgb(141, 141, 141);
 }
 
 #header .profile .social-links{
     text-align: center;
     margin-top: 2px auto;
+    opacity: 65%;
 
 }
 
 
 #header .profile .social-links img{
     display:inline-block;
-    width: 40px;
-    border: 3px solid rgb(17, 17, 17);
+    width: 25px;
     list-style: none;
     text-decoration: none;
-    background: #e08713;
-    border-radius: 50%;
+    background: #4a4744;
+    
     
 }
 
@@ -78,21 +78,23 @@ html,body{
 
 .nav-menu img{
     width: 35px;
+    opacity: 60%;
+   
 }
 
 .nav-menu a,
 .nav-menu a:focus{
     display: flex;
     align-items: center;
-    color: rgb(17, 17, 17);
+    color: rgb(141, 141, 141);
     transition: 0.3s;
     font-size: 18px;
 }
 
 .nav-menu a:hover{
-    font-size: 25px;
+    font-size: 22px;
     transition: 0.3s;
-    color: rgb(17, 17, 17);
+    color: rgb(141, 141, 141);
 }
 
 
@@ -103,6 +105,58 @@ html,body{
     padding-right: .8rem;
     color:#fff;
 }
+
+#main{
+    margin-left: 300px;
+}
+
+#main #inicio{
+    background: rgb(25,25,25);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    align-items:center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+    .line{
+        border-right: 2px solid rgb(255, 255, 255,0.75);
+        color: rgb(255, 255, 255,0.75);
+        font-family: 'Source Code Pro', monospace;
+        font-size: 22px;
+        width: 64%;
+        padding: 0;
+        margin: 0 auto;
+        white-space: nowrap;
+        overflow: hidden;
+
+    }
+
+    .typing-animation {
+        animation: blinksCursor 500ms steps(40) infinite normal, typing 6s 2s steps(40) infinite normal;
+
+    }
+
+    @keyframes typing{
+        from{
+          width: 0;
+        }
+        to{
+            width:32.5em;
+        }
+    }
+
+    @keyframes blinksCursor{
+        from{
+            border-right-color: rgb(255,255,255,.75);
+        }
+        to{
+            border-right-color:transparent; 
+
+        }
+    }
 
     
 
