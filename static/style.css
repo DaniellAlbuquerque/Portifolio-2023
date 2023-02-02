@@ -6,10 +6,7 @@
 
 html,body{
   font-family: 'Ubuntu', sans-serif;
-  width: 100%;
-  height: 100%; 
 }
-
 
 #header{
     position: fixed;
@@ -44,13 +41,23 @@ html,body{
     color: rgb(141, 141, 141);
 }
 
+#header .profile h2{
+    font-size: 15px;
+    margin: 0;
+    font-weight: 400;
+    word-spacing: 0px;
+    letter-spacing: -1px;
+    font-family: "Ubuntu";
+    text-align: center;
+    color: rgb(141, 141, 141);
+}
+
 #header .profile .social-links{
     text-align: center;
     margin-top: 2px auto;
     opacity: 65%;
 
 }
-
 
 #header .profile .social-links img{
     display:inline-block;
@@ -62,15 +69,12 @@ html,body{
     
 }
 
-
-
 #header .profile .social-links a {
     border-radius: 50%;
     transition: 0.3s;
     text-decoration: none;
     list-style: none;
 }
-
 
 .nav-menu{
     padding: 1.5rem;
@@ -97,9 +101,6 @@ html,body{
     color: rgb(141, 141, 141);
 }
 
-
-
-
 .nav-menu a img,
 .nav-menu a:hover img{
     padding-right: .8rem;
@@ -116,8 +117,7 @@ html,body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    align-items:center;
-    text-align: center;
+    align-items:flex-start;
     width: 100%;
     height: 100vh;
 }
@@ -128,14 +128,14 @@ html,body{
         font-size: 22px;
         width: 64%;
         padding: 0;
-        margin: 0 auto;
+        margin: 100px auto 0px;
         white-space: nowrap;
         overflow: hidden;
 
     }
 
     .typing-animation {
-        animation: blinksCursor 500ms steps(40) infinite normal, typing 6s 2s steps(40) infinite normal;
+        animation: blinksCursor 500ms steps(40) infinite normal, typing  5s 3s steps(40) infinite;
 
     }
 
@@ -157,6 +157,35 @@ html,body{
 
         }
     }
+
+    section#inicio #arrow{
+        margin: 0;
+        width: 50px;
+        color: #fff;
+    } 
+
+    section#inicio .link {
+        display:flex;
+        justify-content:end;
+        align-items:flex-end ;
+        height: 100vH;
+        width: 120px;
+        padding: 0px;
+        margin: 0px;
+
+    }
+    
+     section#inicio  a{
+        color: #fff;
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        align-items: center;
+       
+
+     }
+
+
 
     
 
