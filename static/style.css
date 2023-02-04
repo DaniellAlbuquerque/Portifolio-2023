@@ -8,6 +8,7 @@ html,body{
   font-family: 'Ubuntu', sans-serif;
 }
 
+/* Navegação do menu lateral*/
 #header{
     position: fixed;
     top: 0;
@@ -55,7 +56,7 @@ html,body{
 #header .profile .social-links{
     text-align: center;
     margin-top: 2px auto;
-    opacity: 65%;
+    opacity: 35%;
 
 }
 
@@ -64,7 +65,7 @@ html,body{
     width: 25px;
     list-style: none;
     text-decoration: none;
-    background: #4a4744;
+    
     
     
 }
@@ -82,7 +83,7 @@ html,body{
 
 .nav-menu img{
     width: 35px;
-    opacity: 60%;
+    opacity: 35%;
    
 }
 
@@ -106,13 +107,13 @@ html,body{
     padding-right: .8rem;
     color:#fff;
 }
-
+/*Inicio da main*/
 #main{
     margin-left: 300px;
 }
 
 #main #inicio{
-    background: rgb(25,25,25);
+    background: url(/static/img/background2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -121,12 +122,15 @@ html,body{
     width: 100%;
     height: 100vh;
 }
+/*Estilizando o parágrafo com animação*/
+
+
     .line{
         border-right: 2px solid rgb(255, 255, 255,0.75);
         color: rgb(255, 255, 255,0.75);
-        font-family: 'Source Code Pro', monospace;
-        font-size: 22px;
-        width: 64%;
+        font-family: 'DotGothic16', sans-serif;
+        font-size: 23px;
+        width: 26.8%;
         padding: 0;
         margin: 100px auto 0px;
         white-space: nowrap;
@@ -135,7 +139,7 @@ html,body{
     }
 
     .typing-animation {
-        animation: blinksCursor 500ms steps(40) infinite normal, typing  5s 3s steps(40) infinite;
+        animation: blinksCursor 500ms steps(40) infinite normal, typing  4s 5s steps(40) infinite normal;
 
     }
 
@@ -144,7 +148,7 @@ html,body{
           width: 0;
         }
         to{
-            width:32.5em;
+            width:13em;
         }
     }
 
@@ -157,11 +161,11 @@ html,body{
 
         }
     }
-
+/*Link de arrasta mais*/
     section#inicio #arrow{
         margin: 0;
         width: 50px;
-        color: #fff;
+        opacity: 55%;
     } 
 
     section#inicio .link {
@@ -176,7 +180,7 @@ html,body{
     }
     
      section#inicio  a{
-        color: #fff;
+        color: #b8b6b6;
         text-decoration: none;
         list-style: none;
         display: flex;
@@ -184,6 +188,56 @@ html,body{
        
 
      }
+
+
+     /*Munu amburguinho*/
+     .menu-mobile{
+        position: fixed;
+        color: #fff;
+        background: rgb(46, 44, 44);
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        border-radius: 4rem;
+        cursor: pointer;
+        z-index: 9999;
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        display: none;
+     }
+
+    .menu-mobile img{
+        width: 25px;
+       
+    }
+
+    @media (max-width:1024px){
+        #header{
+            left: -300px;
+        }
+        .menu-mobile{
+            display: flex;
+        }
+
+    #main{
+        margin-left: 0;
+        
+    }
+    .line{
+        font-size: 20px;
+    }
+    }
+
+    @media (max-width:459px){
+        .line{
+            font-size: 17px;
+        }
+
+    }
+
 
 
 
