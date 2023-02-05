@@ -113,7 +113,7 @@ html,body{
 }
 
 #main #inicio{
-    background: url(/static/img/background2.jpg);
+    background: #201f1e;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -130,7 +130,7 @@ html,body{
         color: rgb(255, 255, 255,0.75);
         font-family: 'DotGothic16', sans-serif;
         font-size: 23px;
-        width: 26.8%;
+        width: 37%;
         padding: 0;
         margin: 100px auto 0px;
         white-space: nowrap;
@@ -148,7 +148,7 @@ html,body{
           width: 0;
         }
         to{
-            width:13em;
+            width:12.8em;
         }
     }
 
