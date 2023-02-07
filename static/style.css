@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+/*----------------------------------------INICIO-------------------------------------*/
 html,body{
   font-family: 'Ubuntu', sans-serif;
 }
 
-/* Navegação do menu lateral*/
+/* -------------------------------------Navegação do menu lateral----------------------*/
 #header{
     position: fixed;
     top: 0;
@@ -16,7 +16,7 @@ html,body{
     font-size: 20px;
     bottom: 0;
     padding: 0 10px;
-    background: #4a4744;
+    background: #383736;
     overflow-y: auto;
     width: 300px;
     transition: all ease-in-out 0.5s;
@@ -52,7 +52,7 @@ html,body{
     text-align: center;
     color: rgb(141, 141, 141);
 }
-
+/*-------------------------------Estilização dos icones do menu lateral---------------------*/
 #header .profile .social-links{
     text-align: center;
     margin-top: 2px auto;
@@ -65,6 +65,7 @@ html,body{
     width: 25px;
     list-style: none;
     text-decoration: none;
+    cursor: pointer;
     
     
     
@@ -105,15 +106,15 @@ html,body{
 .nav-menu a img,
 .nav-menu a:hover img{
     padding-right: .8rem;
-    color:#fff;
+    
 }
-/*Inicio da main*/
+/*-----------------------------------Inicio da main-----------------------------------------*/
 #main{
     margin-left: 300px;
 }
 
 #main #inicio{
-    background: #201f1e;
+    background: #252525;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -122,24 +123,40 @@ html,body{
     width: 100%;
     height: 100vh;
 }
-/*Estilizando o parágrafo com animação*/
 
+/*-------------------------Estilizando o parágrafo com animação---------------------------*/
+#header-line{
+    margin-top: 30px;
 
-    .line{
+}
+#header-line .line{
         border-right: 2px solid rgb(255, 255, 255,0.75);
-        color: rgb(255, 255, 255,0.75);
+        color: #fff;
         font-family: 'DotGothic16', sans-serif;
         font-size: 23px;
-        width: 37%;
+        width: 27.8%;
         padding: 0;
         margin: 100px auto 0px;
         white-space: nowrap;
         overflow: hidden;
+}
+
+
+#header-line .typing-animation {
+        animation: blinksCursor 500ms steps(40) infinite normal, typing  4s 1s steps(40) infinite normal;
+        margin-top: 0px;
 
     }
 
-    .typing-animation {
-        animation: blinksCursor 500ms steps(40) infinite normal, typing  4s 5s steps(40) infinite normal;
+
+section#inicio #header-line{
+    align-items:center;
+    justify-content: center;
+    padding: 2px;
+    background-color:#252525;
+    align-content: flex-start;
+    
+   
 
     }
 
@@ -161,59 +178,81 @@ html,body{
 
         }
     }
-/*Link de arrasta mais*/
-    section#inicio #arrow{
-        margin: 0;
-        width: 50px;
-        opacity: 55%;
-    } 
 
-    section#inicio .link {
+    /*------------------------------------Titulo da main------------------------------*/
+    section#inicio .text-name{
+        height: 500px;
         display:flex;
-        justify-content:end;
-        align-items:flex-end ;
-        height: 100vH;
-        width: 120px;
-        padding: 0px;
-        margin: 0px;
+        justify-content: center;
+        align-items: center;
+        
 
     }
-    
-     section#inicio  a{
-        color: #b8b6b6;
-        text-decoration: none;
-        list-style: none;
-        display: flex;
-        align-items: center;
-       
 
+    section#inicio h2{
+        font-size:40px;
+        text-align: center;
+    }
+
+    section#inicio span#subtitle{
+        font-size: 1.3rem;
+        text-align: center;
+
+
+    }
+
+    .text-shadow{
+        text-shadow: 5px 5px 15px #0000;
+    }
+
+
+
+    
+/*------------------------------Link de arrasta mais----------------------------------*/
+
+section#inicio .link{
+    color: #fff;
+    top: 0.7rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    font-size:15px;
+    display: flex;
+    justify-content:end;
+    align-items: end;
+    display:flex;
+ }
+section#inicio .link a{
+    text-decoration: none;
+    color: #fff;
+ }
+     section#inicio .arrow{
+        width: 20px;
      }
 
-
-     /*Munu amburguinho*/
-     .menu-mobile{
+  
+/*-------------------------------Munu amburguinho--------------------------------------*/
+.menu-mobile{
         position: fixed;
         color: #fff;
         background: rgb(46, 44, 44);
-        top: 1rem;
-        right: 1rem;
+        top: 0.7rem;
+        right: 0.5rem;
         font-size: 1.5rem;
         border-radius: 4rem;
         cursor: pointer;
-        z-index: 9999;
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         display: flex;
         justify-content:center;
         align-items: center;
         display: none;
      }
 
-    .menu-mobile img{
+.menu-mobile img{
         width: 25px;
        
     }
-
+/*--------------------------------Estilização responsivo-------------------------------*/
     @media (max-width:1024px){
         #header{
             left: -300px;
@@ -221,22 +260,92 @@ html,body{
         .menu-mobile{
             display: flex;
         }
+       
+        section#inicio #subtitle{
+            font-size: 20px;  
+            
+        }
 
     #main{
         margin-left: 0;
         
     }
-    .line{
-        font-size: 20px;
+    
+}
+
+
+@media (max-width:792px){
+    section#inicio h2{
+        font-size: 35px;
     }
-    }
+   
+}
+
+
 
     @media (max-width:459px){
-        .line{
-            font-size: 17px;
+        section#inicio .line{
+            font-size: 18px;
+        }
+        .menu-mobile img{
+            width:30px;
+        }
+
+        .menu-mobile{
+            width: 30px;
+            height: 30px;
         }
 
     }
+
+    @media (max-width:370px){
+        section#inicio h2{
+            font-size: 33px;
+
+        }
+    }
+    section#inicio #subtitle{
+        font-size: 17px;
+
+    }
+
+
+    @media (max-width:280px){
+        section#inicio .line{
+            font-size: 17px;
+        }
+        .menu-mobile img{
+            width:30px;
+        }
+        section#inicio h2{
+            text-align: center;
+        }
+        section#inicio #subtitle{
+            text-align: center;
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
